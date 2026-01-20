@@ -65,7 +65,16 @@ export default function GardenAssistant() {
     } catch (error) {
       setMessages(prev => [...prev, { 
         role: 'assistant', 
-        content: '❌ Error: Could not get response.\n\nMake sure:\n1. Backend is running on http://localhost:5000\n2. GROQ_API_KEY is set in backend/.env\n3. MongoDB is connected\n\nError: ' + error.message
+        content:
+`❌ Error: Could not get response.
+
+Possible reasons:
+1. Backend is not reachable
+2. Backend returned an error
+3. Network or CORS issue
+
+Details: ${error.message}`
+
 
       }]);
     } finally {
