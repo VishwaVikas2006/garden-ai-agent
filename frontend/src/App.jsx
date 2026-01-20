@@ -101,7 +101,7 @@ export default function GardenAssistant() {
             </div>
             <div>
               <h1 className="text-2xl font-bold text-gray-800">Garden Assistant AI</h1>
-              <p className="text-sm text-gray-600">Powered by Claude AI • Your organic gardening companion</p>
+              <p className="text-sm text-gray-600">Powered by GroqCloud API • Your organic gardening companion</p>
             </div>
           </div>
           <button
