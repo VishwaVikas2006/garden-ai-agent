@@ -1,7 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Send, Leaf, Loader2, Trash2 } from 'lucide-react';
 
-const API_URL = 'http://localhost:5000';
+const API_URL =
+  process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
 const SESSION_ID = 'user-' + Date.now();
 
 export default function GardenAssistant() {
